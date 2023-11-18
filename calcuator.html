@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let calcuation ='';
+        function calcuating(value){
+            calcuation +=value;
+            console.log(`${calcuation}`)
+            document.querySelector('.calcuating-js')
+             .innerHTML=`${calcuation}`;
+        }
+    </script>
+    <div class="calcuating-js"></div>
+    <div>
+        
+            <button onclick="
+                calcuating('1');
+                ">
+                1
+            </button>
+
+            <button
+            onclick="
+                calcuating('2');
+                ">
+                2
+            </button>
+
+            <button onclick="
+            calcuating('3');
+            ">
+                3
+            </button>
+            
+            <button onclick="
+            calcuating('+');
+            " class="deal">
+                +
+
+            </button>
+        
+            <button onclick="
+                calcuating('4');
+                ">
+                4
+            </button>
+
+            <button
+            onclick="
+                calcuating('5');
+                ">
+                5
+            </button>
+
+            <button onclick="
+            calcuating('6');
+            ">
+                6
+            </button>
+
+            <button onclick="
+            calcuating('-');
+            " class="deal">
+                -
+            </button>
+        
+        
+            <button onclick="
+                calcuating('7');
+                ">
+                7
+            </button>
+
+            <button
+            onclick="
+                calcuating('8');
+                ">
+                8
+            </button>
+
+            <button onclick="
+            calcuating('9');
+            ">
+                9
+            </button>
+            <button onclick="
+            calcuating('*');
+            " class="deal">
+                *
+            </button>
+            <button  onclick="
+            calcuating('0');
+            "
+            >0
+            </button>
+
+            <button onclick="calcuating('.');">.
+            </button>
+
+            
+
+            <button onclick="
+            eval(calcuation);
+            calcuation= eval(calcuation);
+            console.log(calcuation);
+            document.querySelector('.calcuating-js')
+             .innerHTML=`${calcuation}`;
+            ">
+                =
+            </button>
+            <button onclick="
+            calcuating('/');
+            " class="deal">
+                /
+            </button>
+            <button onclick="
+            calcuation='';
+            console.log('calcuation was reset')
+            document.querySelector('.calcuating-js')
+             .innerHTML=`${calcuation}`;
+            ">C</button>
+        
+    </div>
+</body>
+</html>
