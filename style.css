@@ -47,7 +47,7 @@ button{
 }
 button:hover {
     opacity: 0.7;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.7);
 }
 button:active{
     transform: translateX(6px) translateY(6px);
